@@ -1,0 +1,173 @@
+/* [project]/src/components/styles/Section.module.css [app-client] (css) */
+.Section-module__yyPpFa__sectionContainer {
+  display: flex;
+  padding: 10vh 10vw;
+  min-width: 500px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.Section-module__yyPpFa__sectionContainerFullHeight {
+  height: 80vh;
+}
+
+.Section-module__yyPpFa__sectionContent {
+  margin: auto;
+}
+
+.Section-module__yyPpFa__sectionLeft {
+  margin-left: 0;
+}
+
+
+/* [project]/src/components/styles/Skills.module.css [app-client] (css) */
+.Skills-module__H33bja__highlight {
+  margin: 50px 0 0;
+  border-radius: 10px;
+}
+
+.Skills-module__H33bja__highlightNoHeader {
+  margin-top: 10px;
+}
+
+.Skills-module__H33bja__highlightTitle {
+  text-align: left;
+}
+
+.Skills-module__H33bja__highlightSkills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Skills-module__H33bja__skillProficient {
+  opacity: 1;
+}
+
+.Skills-module__H33bja__skillKnowledgeable {
+  opacity: .7;
+}
+
+.Skills-module__H33bja__skillFamiliar {
+  opacity: .4;
+}
+
+.Skills-module__H33bja__skillCert {
+  opacity: 1;
+}
+
+@keyframes Skills-module__H33bja__shake {
+  0% {
+    transform: translate(0)rotate(0);
+  }
+
+  10% {
+    transform: translate(0, -1px)rotate(2deg);
+  }
+
+  20% {
+    transform: translate(0, -2px)rotate(3deg);
+  }
+
+  30% {
+    transform: translate(0, -2px)rotate(2deg);
+  }
+
+  40% {
+    transform: translate(0, -1px)rotate(-3deg);
+  }
+
+  50% {
+    transform: translate(0)rotate(0);
+  }
+
+  60% {
+    transform: translate(0, 1px)rotate(3deg);
+  }
+
+  70% {
+    transform: translate(0, 2px)rotate(2deg);
+  }
+
+  80% {
+    transform: translate(0, 2px)rotate(-3deg);
+  }
+
+  90% {
+    transform: translate(0, 1px)rotate(-2deg);
+  }
+
+  100% {
+    transform: translate(0)rotate(0);
+  }
+}
+
+.Skills-module__H33bja__skillAll {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  min-width: 70px;
+  text-align: center;
+  margin: 6px 10px 6px 0;
+}
+
+.Skills-module__H33bja__skillAll:hover {
+  cursor: default;
+}
+
+.Skills-module__H33bja__skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Skills-module__H33bja__skillAnimation {
+  animation: .4s ease-in-out Skills-module__H33bja__shake;
+}
+
+
+/* [project]/src/components/styles/About.module.css [app-client] (css) */
+.About-module__x0iwtW__aboutSplit {
+  display: flex;
+}
+
+.About-module__x0iwtW__aboutText {
+  max-width: 55%;
+  margin-right: 5%;
+}
+
+.About-module__x0iwtW__aboutProfile {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.About-module__x0iwtW__profileCrop {
+  margin: auto;
+  min-width: 250px;
+  max-width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10%;
+  filter: grayscale();
+  transition: filter .1s ease-in;
+}
+
+.About-module__x0iwtW__profileCrop:hover {
+  filter: grayscale(0);
+  transition: filter .1s ease-in;
+}
+
+.About-module__x0iwtW__profileImg {
+  margin: 0;
+}
+
+
+/* [project]/src/components/styles/Hero.module.css [app-client] (css) */
+.Hero-module__43Wqaa__subtitle {
+  text-align: left;
+  font-size: 19pt;
+}
+
+
+/*# sourceMappingURL=src_components_styles_055888._.css.map*/

@@ -1,0 +1,38 @@
+/* [project]/src/components/styles/About.module.css [app-client] (css) */
+.About-module__x0iwtW__aboutSplit {
+  display: flex;
+}
+
+.About-module__x0iwtW__aboutText {
+  max-width: 55%;
+  margin-right: 5%;
+}
+
+.About-module__x0iwtW__aboutProfile {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.About-module__x0iwtW__profileCrop {
+  margin: auto;
+  min-width: 250px;
+  max-width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10%;
+  filter: grayscale();
+  transition: filter .1s ease-in;
+}
+
+.About-module__x0iwtW__profileCrop:hover {
+  filter: grayscale(0);
+  transition: filter .1s ease-in;
+}
+
+.About-module__x0iwtW__profileImg {
+  margin: 0;
+}
+
+/*# sourceMappingURL=src_components_styles_About_module_b52d8e.css.map*/

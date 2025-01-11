@@ -1,0 +1,30 @@
+/* [project]/src/components/styles/Section.module.css [app-client] (css) */
+.Section-module__yyPpFa__sectionContainer {
+  display: flex;
+  padding: 10vh 10vw;
+  min-width: 500px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.Section-module__yyPpFa__sectionContainerFullHeight {
+  height: 80vh;
+}
+
+.Section-module__yyPpFa__sectionContent {
+  margin: auto;
+}
+
+.Section-module__yyPpFa__sectionLeft {
+  margin-left: 0;
+}
+
+
+/* [project]/src/components/styles/Hero.module.css [app-client] (css) */
+.Hero-module__43Wqaa__subtitle {
+  text-align: left;
+  font-size: 19pt;
+}
+
+
+/*# sourceMappingURL=src_components_styles_7615f0._.css.map*/

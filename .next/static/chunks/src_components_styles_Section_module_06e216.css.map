@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/justinkonecny/Projects/com.jkonecny/src/components/styles/Section.module.css"],"sourcesContent":[".sectionContainer {\n    display: flex;\n    padding: 10vh 10vw;\n    min-width: 500px;\n    max-width: 900px;\n    margin: auto;\n}\n\n.sectionContainerFullHeight {\n    height: 80vh;\n}\n\n.sectionContent {\n    margin: auto;\n}\n\n.sectionLeft {\n    margin-left: 0;\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;AAIA;;;;AAIA"}},
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

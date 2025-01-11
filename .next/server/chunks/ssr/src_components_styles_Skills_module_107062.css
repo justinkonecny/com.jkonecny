@@ -1,0 +1,106 @@
+/* [project]/src/components/styles/Skills.module.css [app-client] (css) */
+.Skills-module__H33bja__highlight {
+  margin: 50px 0 0;
+  border-radius: 10px;
+}
+
+.Skills-module__H33bja__highlightNoHeader {
+  margin-top: 10px;
+}
+
+.Skills-module__H33bja__highlightTitle {
+  text-align: left;
+}
+
+.Skills-module__H33bja__highlightSkills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Skills-module__H33bja__skillProficient {
+  opacity: 1;
+}
+
+.Skills-module__H33bja__skillKnowledgeable {
+  opacity: .7;
+}
+
+.Skills-module__H33bja__skillFamiliar {
+  opacity: .4;
+}
+
+.Skills-module__H33bja__skillCert {
+  opacity: 1;
+}
+
+@keyframes Skills-module__H33bja__shake {
+  0% {
+    transform: translate(0)rotate(0);
+  }
+
+  10% {
+    transform: translate(0, -1px)rotate(2deg);
+  }
+
+  20% {
+    transform: translate(0, -2px)rotate(3deg);
+  }
+
+  30% {
+    transform: translate(0, -2px)rotate(2deg);
+  }
+
+  40% {
+    transform: translate(0, -1px)rotate(-3deg);
+  }
+
+  50% {
+    transform: translate(0)rotate(0);
+  }
+
+  60% {
+    transform: translate(0, 1px)rotate(3deg);
+  }
+
+  70% {
+    transform: translate(0, 2px)rotate(2deg);
+  }
+
+  80% {
+    transform: translate(0, 2px)rotate(-3deg);
+  }
+
+  90% {
+    transform: translate(0, 1px)rotate(-2deg);
+  }
+
+  100% {
+    transform: translate(0)rotate(0);
+  }
+}
+
+.Skills-module__H33bja__skillAll {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  min-width: 70px;
+  text-align: center;
+  margin: 6px 10px 6px 0;
+}
+
+.Skills-module__H33bja__skillAll:hover {
+  cursor: default;
+}
+
+.Skills-module__H33bja__skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Skills-module__H33bja__skillAnimation {
+  animation: .4s ease-in-out Skills-module__H33bja__shake;
+}
+
+
+/*# sourceMappingURL=src_components_styles_Skills_module_107062.css.map*/
