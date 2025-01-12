@@ -10,8 +10,8 @@ export const AllSkills: FC = () => {
         proficient={[
           "Hack",
           "PHP",
-          "GraphQL",
           "Python",
+          "GraphQL",
           "Laravel",
           "React",
           "JavaScript",
@@ -19,18 +19,18 @@ export const AllSkills: FC = () => {
           "Java",
           "HTML",
           "CSS",
+          "SQL",
         ]}
-        knowledgeable={["Vue.js", "SQL", "C", "C++", "Go"]}
+        knowledgeable={["C++", "Vue.js", "Go"]}
       />
       <Skills
         header={"Other Software"}
         proficient={["Git", "Docker"]}
-        knowledgeable={["AWS", "Salesforce", "GDB"]}
+        knowledgeable={["AWS", "GDB"]}
       />
       <Skills
-        header={"Privacy Skills"}
+        header={"Other Skills"}
         proficient={[
-          "Software Development",
           "Root Cause Analysis",
           "Variant Analysis",
           "Incident Impact Analysis",

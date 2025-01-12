@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { FC, useEffect, useRef } from "react";
 import style from "./styles/Skills.module.css";
@@ -24,11 +24,11 @@ export const Skills: FC<Props> = ({
     const skills = Array.from(ref.current?.children ?? []);
     for (const skill of skills) {
       // on hover, add class to animate the skill
-      skill.addEventListener("mouseover", function (e) {
+      skill.addEventListener("mouseover", function () {
         skill.classList.add(style.skillAnimation);
       });
       // on animation end, remove the animation class
-      skill.addEventListener("animationend", function (e) {
+      skill.addEventListener("animationend", function () {
         skill.classList.remove(style.skillAnimation);
       });
     }

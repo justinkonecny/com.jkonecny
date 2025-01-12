@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/components/styles/About.module.css"],"sourcesContent":[".aboutSplit {\n    display: flex;\n}\n\n.aboutText {\n    max-width: 55%;\n    margin-right: 5%;\n}\n\n.aboutProfile {\n    max-width: 40%;\n    display: flex;\n    align-items: center;\n    margin: auto;\n}\n\n.profileCrop {\n    margin: auto;\n    min-width: 250px;\n    max-width: 350px;\n    height: 350px;\n    overflow: hidden;\n    border-radius: 10%;\n    filter: grayscale(100%);\n    transition: filter 0.10s ease-in;\n}\n\n.profileCrop:hover {\n    filter: grayscale(0);\n    transition: filter 0.10s ease-in;\n}\n\n.profileImg {\n    margin: 0;\n}\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;AAKA;;;;;;;AAOA;;;;;;;;;;;AAWA;;;;;AAKA"}},
-    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

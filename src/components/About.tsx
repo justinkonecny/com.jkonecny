@@ -11,8 +11,8 @@ export const About: FC = () => {
         <div className={styles.aboutText}>
           <h2>About Me</h2>
           <p>
-            Hey there, I&apos;m Justin, a software engineer from New Jersey.
-            I&apos;m currently living in the New York area, with my dog, Jingle.
+            Hey there, I&apos;m Justin, a Software Engineer from New Jersey. I
+            live in the New York area, with my two dogs: Jingle and Willow.
           </p>
           <p>
             I&apos;m a <span className={"emphasis"}>Software Engineer</span> at{" "}
