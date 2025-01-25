@@ -116,3 +116,11 @@ button:hover {
 .emphasis {
   color: var(--green);
 }
+
+ul.list-container {
+  list-style-type: none;
+}
+
+li:before {
+  content: "- ";
+}

@@ -1,3 +1,5 @@
 node_modules
 out
 html
+.next/
+.DS_Store

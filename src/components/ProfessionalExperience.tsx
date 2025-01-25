@@ -3,15 +3,55 @@ import { Section } from "./Section";
 import { ExpandableText } from "./ExpandableText";
 import { Skills } from "./Skills";
 
+interface JobProps {
+  company: string;
+  role: string;
+  team: string | null;
+  timeline: string;
+  location: string;
+}
+
+const Job: FC<JobProps> = ({ company, role, team, timeline, location }) => (
+  <>
+    <h3>{company}</h3>
+    <h4>{role}</h4>
+    {team && <h5>{team}</h5>}
+    <h5>
+      {timeline} | {location}
+    </h5>
+  </>
+);
+
 export const ProfessionalExperience: FC = () => {
   return (
     <Section alignment={"left"}>
       <h2>Professional Experience</h2>
 
-      <h3>Meta</h3>
-      <h4>Privacy Engineer</h4>
-      <h4>February 2022 - Present | Menlo Park, CA</h4>
+      <Job
+        company={"Meta"}
+        role={"Software Engineer"}
+        team={"Secure Product Authentication"}
+        timeline={"October 2024 - Present"}
+        location={"Remote (NJ)"}
+      />
+      <Skills proficient={["Hack", "C++"]} />
 
+      <Job
+        company={"Meta"}
+        role={"Software Engineer"}
+        team={"Account Access Infrastructure"}
+        timeline={"September 2023 - October 2024"}
+        location={"Remote (NJ)"}
+      />
+      <Skills proficient={["Hack", "React"]} />
+
+      <Job
+        company={"Facebook"}
+        role={"Privacy Engineer"}
+        team={"Privacy Incident Response Engineering"}
+        timeline={"February 2022 - September 2023"}
+        location={"Menlo Park, CA"}
+      />
       <ExpandableText text={"Role + Responsibilities"}>
         <ul className={"list-container"}>
           <div className={"list"}>
@@ -55,9 +95,13 @@ export const ProfessionalExperience: FC = () => {
         ]}
       />
 
-      <h3>Facebook</h3>
-      <h4>Privacy Engineering Intern</h4>
-      <h4>May 2021 - August 2021 | Menlo Park, CA</h4>
+      <Job
+        company={"Facebook"}
+        role={"Privacy Engineering Intern"}
+        team={"Privacy Incident Response Engineering"}
+        timeline={"May 2021 - August 2021"}
+        location={"Menlo Park, CA"}
+      />
       <ExpandableText text={"Role + Responsibilities"}>
         <ul className={"list-container"}>
           <div className={"list"}>
@@ -96,9 +140,13 @@ export const ProfessionalExperience: FC = () => {
         ]}
       />
 
-      <h3>Places For Less</h3>
-      <h4>Full-Stack Software Engineering Co-op</h4>
-      <h4>May 2020 - January 2021 | Boston, MA</h4>
+      <Job
+        company={"Places For Less"}
+        role={"Full-Stack Software Engineering Co-op"}
+        team={null}
+        timeline={"May 2020 - January 2021"}
+        location={"Boston, MA"}
+      />
       <ExpandableText text={"Role + Responsibilities"}>
         <ul className={"list-container"}>
           <div className={"list"}>
@@ -132,9 +180,13 @@ export const ProfessionalExperience: FC = () => {
         ]}
       />
 
-      <h3>Rocket Software</h3>
-      <h4>Software Engineering Co-op</h4>
-      <h4>July 2019 - December 2019 | Waltham, MA</h4>
+      <Job
+        company={"Rocket Software"}
+        role={"Software Engineering Co-op"}
+        team={null}
+        timeline={"July 2019 - December 2019"}
+        location={"Waltham, MA"}
+      />
       <ExpandableText text={"Role + Responsibilities"}>
         <ul className={"list-container"}>
           <div className={"list"}>
