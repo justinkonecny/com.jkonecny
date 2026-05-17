@@ -1,15 +1,17 @@
-import About from "@/components/About";
-import Education from "@/components/Education";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ProfessionalExperience from "@/components/ProfessionalExperience";
+import Education from "@/components/Education";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
+      <Navbar />
       <Hero />
-      <About />
+      <ProfessionalExperience />
       <Education />
-      <ProfessionalExperience/>
+      <Footer />
     </>
   );
 }

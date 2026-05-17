@@ -1,0 +1,24 @@
+.footer {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+    border-top: 1px solid #E5E7EB;
+}
+
+.text {
+    font-size: 0.875rem;
+    color: #6B7280;
+    margin: 0 !important;
+}
+
+.link {
+    color: #0D9488;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 150ms ease;
+}
+
+.link:hover {
+    color: #0f766e;
+    text-decoration: underline;
+}

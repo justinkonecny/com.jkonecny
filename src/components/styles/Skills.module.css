@@ -1,10 +1,9 @@
 .highlight {
-    margin: 50px 0 0 0;
-    border-radius: 10px;
+    margin: 2rem 0 0 0;
 }
 
 .highlightNoHeader {
-    margin-top: 10px;
+    margin-top: 0.75rem;
 }
 
 .highlightTitle {
@@ -14,6 +13,7 @@
 .highlightSkills {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.4rem;
 }
 
 .skillProficient {
@@ -21,83 +21,40 @@
 }
 
 .skillKnowledgeable {
-    opacity: 0.7;
+    opacity: 0.65;
 }
 
 .skillFamiliar {
     opacity: 0.4;
 }
 
-.skillCert {
-    opacity: 1;
-}
-
-@keyframes shake {
-    0% {
-        transform: translate(0px, 0px) rotate(0deg);
-    }
-
-    10% {
-        transform: translate(0px, -1px) rotate(2deg);
-    }
-
-    20% {
-        transform: translate(0px, -2px) rotate(3deg);
-    }
-
-    30% {
-        transform: translate(0px, -2px) rotate(2deg);
-    }
-
-    40% {
-        transform: translate(0px, -1px) rotate(-3deg);
-    }
-
-    50% {
-        transform: translate(0px, 0px) rotate(0deg);
-    }
-
-    60% {
-        transform: translate(0px, 1px) rotate(3deg);
-    }
-
-    70% {
-        transform: translate(0px, 2px) rotate(2deg);
-    }
-
-    80% {
-        transform: translate(0px, 2px) rotate(-3deg);
-    }
-
-    90% {
-        transform: translate(0px, 1px) rotate(-2deg);
-    }
-
-    100% {
-        transform: translate(0px, 0px) rotate(0deg);
-    }
+@keyframes wiggle {
+    0%   { transform: rotate(0deg); }
+    20%  { transform: rotate(-6deg); }
+    40%  { transform: rotate(6deg); }
+    60%  { transform: rotate(-4deg); }
+    80%  { transform: rotate(4deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .skillAll {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    padding: 6px 14px;
-    min-width: 70px;
-    text-align: center;
-    margin: 6px 10px 6px 0;
-    font-size: 14;
+    background-color: rgba(13, 148, 136, 0.10);
+    color: #0D9488;
+    border-radius: 999px;
+    padding: 3px 11px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 .skillAll:hover {
     cursor: default;
+    animation: wiggle 0.4s ease;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
-}
-
-.skillAnimation {
-    animation: shake 400ms ease-in-out;
+    gap: 0.4rem;
 }

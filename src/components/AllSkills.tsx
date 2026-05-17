@@ -21,7 +21,7 @@ export const AllSkills: FC = () => {
           "CSS",
           "SQL",
         ]}
-        knowledgeable={["C++", "Vue.js", "Go"]}
+        knowledgeable={["Rust", "C++", "Vue.js", "Go"]}
       />
       <Skills
         header={"Other Software"}

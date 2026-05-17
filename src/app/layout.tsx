@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Justin Konecny | Software Engineer",
 };
 
-const font = Noto_Sans_Mono({
+const font = Inter({
   subsets: ["latin"],
 });
 

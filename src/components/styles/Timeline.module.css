@@ -1,0 +1,42 @@
+.timelineContainer {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* Vertical line */
+.timelineContainer::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 0.5rem;
+    bottom: 0;
+    width: 1px;
+    background: #E5E7EB;
+}
+
+.entry {
+    position: relative;
+}
+
+.entry + .entry {
+    margin-top: 2.5rem;
+}
+
+.dot {
+    position: absolute;
+    /* center 8px dot on the 1px line at left:3px of container => left: calc(-1.5rem + 3px - 4px) */
+    left: calc(-1.5rem - 1px);
+    top: 0.35rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D1D5DB;
+    transition: background-color 350ms ease, transform 350ms ease, box-shadow 350ms ease;
+    z-index: 1;
+}
+
+.dotActive {
+    background: #0D9488;
+    transform: scale(1.25);
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}

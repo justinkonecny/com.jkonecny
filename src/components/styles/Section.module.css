@@ -1,19 +1,13 @@
 .sectionContainer {
-    display: flex;
-    padding: 10vh 10vw;
-    min-width: 500px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.sectionContainerFullHeight {
-    height: 90vh;
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
 }
 
 .sectionContent {
-    margin: auto;
+    width: 100%;
 }
 
 .sectionLeft {
-    margin-left: 0;
+    text-align: left;
 }

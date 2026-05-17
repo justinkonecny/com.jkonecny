@@ -2,11 +2,14 @@ import React, { FC } from "react";
 import { Section } from "./Section";
 import { ExpandableText } from "./ExpandableText";
 import { Skills } from "./Skills";
+import { Timeline, TimelineEntry } from "./Timeline";
 
 export const Education: FC = () => {
   return (
-    <Section alignment={"left"}>
+    <Section id="education" alignment={"left"}>
       <h2>Education</h2>
+      <Timeline>
+      <TimelineEntry>
       <h3>Northeastern University</h3>
       <h4>2017 - 2021 | Boston, MA</h4>
       <h4>
@@ -47,6 +50,8 @@ export const Education: FC = () => {
         knowledgeable={["AWS", "C", "C++", "Racket", "LaTeX"]}
         familiar={["AMD64 Assembly"]}
       />
+      </TimelineEntry>
+      </Timeline>
     </Section>
   );
 };

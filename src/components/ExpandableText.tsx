@@ -12,28 +12,21 @@ export const ExpandableText: FC<PropsWithChildren<Props>> = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const plusClass = [style.plus];
-  if (isExpanded) {
-    plusClass.push(style.x);
-  }
-
   return (
     <div className={style.expandableContainer}>
-      <div className={style.expandableHeader}>
-        <h5>{text}</h5>
-        <button
-          className={style.plusBtn}
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          <div className={plusClass.join(" ")} />
-        </button>
-      </div>
       <div
-        className={
-          isExpanded ? style.expandableContent : style.expandableHidden
-        }
+        className={style.expandableHeader}
+        onClick={() => setIsExpanded(!isExpanded)}
+        role="button"
+        aria-expanded={isExpanded}
       >
-        {children}
+        <h5>{text}</h5>
+        <span className={`${style.chevron} ${isExpanded ? style.chevronOpen : ""}`}>▸</span>
+      </div>
+      <div className={`${style.expandableContent} ${isExpanded ? style.expandableOpen : ""}`}>
+        <div className={style.expandableInner}>
+          {children}
+        </div>
       </div>
     </div>
   );
