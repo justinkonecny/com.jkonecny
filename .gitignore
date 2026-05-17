@@ -3,3 +3,6 @@ out
 html
 .next/
 .DS_Store
+.firebase/
+.agents/
+skills-lock.json
