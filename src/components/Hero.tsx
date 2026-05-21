@@ -6,7 +6,7 @@ export const Hero: FC = () => {
     <section className={styles.heroSection} id="contact">
       <div className={styles.heroContent}>
         <h1>Justin Konecny</h1>
-        <p className={styles.subtitle}>Software Engineer · Security</p>
+        <p className={styles.subtitle}>Software Engineer · Security & Privacy</p>
         <p className={styles.tagline}>
           Building secure authentication and AI safety systems at Meta.
         </p>
