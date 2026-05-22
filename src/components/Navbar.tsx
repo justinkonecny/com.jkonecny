@@ -1,10 +1,10 @@
 "use client";
 import React, { FC, useEffect, useState } from "react";
-import Link from "next/link";
 import styles from "./styles/Navbar.module.css";
 
 export const Navbar: FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [showName, setShowName] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,12 +14,25 @@ export const Navbar: FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const heroName = document.getElementById("hero-name");
+    if (!heroName) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowName(!entry.isIntersecting),
+      { threshold: 0 }
+    );
+
+    observer.observe(heroName);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.navbarScrolled : ""}`}>
       <div className={styles.navInner}>
-        <Link href="/" className={styles.navBrand}>
-          JUSTIN M. KONECNY
-        </Link>
+        <span className={`${styles.navBrand} ${showName ? styles.navBrandVisible : ""}`}>
+          Justin Konecny
+        </span>
         <div className={styles.navLinks}>
           <a href="#experience" className={styles.navLink}>Experience</a>
           <a href="#education" className={styles.navLink}>Education</a>

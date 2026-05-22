@@ -26,12 +26,17 @@
     font-size: 0.95rem;
     font-weight: 700;
     color: #111827;
-    text-decoration: none;
     letter-spacing: 0.03em;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 200ms ease, transform 200ms ease;
+    pointer-events: none;
 }
 
-.navBrand:hover {
-    color: #0D9488;
+.navBrandVisible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .navLinks {

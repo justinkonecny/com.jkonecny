@@ -5,7 +5,7 @@ export const Hero: FC = () => {
   return (
     <section className={styles.heroSection} id="contact">
       <div className={styles.heroContent}>
-        <h1>Justin Konecny</h1>
+        <h1 id="hero-name">Justin Konecny</h1>
         <p className={styles.subtitle}>Software Engineer · Security & Privacy</p>
         <p className={styles.tagline}>
           Building secure authentication and AI safety systems at Meta.
